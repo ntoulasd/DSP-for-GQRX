@@ -1,8 +1,7 @@
-# DSP-for-GQRX
 #Simple command line tool for noise suppression.
 1. Mute Gqrx. Turn off audio gain -80db
 2. Enable UDP stream.
-3. Run ./filter_set_profile.sh to read noise profile. This must run when no signal is active.
+3. Run ./filter_set_profile.sh to read noise profile. This must run when no signal is active. Profile must re-set in every frequency or modulation change.
 4. Run ./filter_profile.sh to listen
 
 #Syntax:
@@ -17,6 +16,6 @@ yy=0.26 filtering for CW
 yy=0.12 for SSB audio
 
 
-Requires sox, gqrx
+Requires nc, sox, gqrx
 
 Licence GPL
